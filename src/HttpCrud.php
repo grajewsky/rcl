@@ -1,14 +1,13 @@
 <?php
 
-namespace RCL;
-
-use RCL\Abstracts\HttpCrudMethods;
+namespace App\Foresion\Endpoint;
+use App\Foresion\Model\HttpCrudMethods;
 use GuzzleHttp\Client;
 use GuzzleHttp\Post\PostBodyInterface;
 
 abstract class HttpCrud extends HttpCrudMethods{
 
-    protected $url;
+    protected $url = null;
     protected $client;
 
     public function __construct(Client $client){
