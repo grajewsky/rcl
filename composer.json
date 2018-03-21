@@ -1,0 +1,21 @@
+{
+    "name": "luu05/rcl",
+    "description": "Http REST Crud for L-ENTITY",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Grajewsky",
+            "email": "grajewski.lukasz@wp.pl"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "guzzlehttp/guzzle": "^6.3"
+	},
+	
+    "autoload": {
+        "psr-4": {
+          "RCL\\": "src/"
+        }
+    }
+}
